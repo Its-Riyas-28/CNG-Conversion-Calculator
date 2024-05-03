@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.form-input{
+    @apply h-[40px] w-[300px]
+    text-xl bg-Sred border-2 rounded-lg text-white
+    border-black  outline-none px-6 
+    focus:border-black
+}
+
+.span-box{
+    @apply text-lg mt-1 absolute font-medium left-0 mx-5 px-1 bg-Sred -translate-y-5 translate-x-16
+}

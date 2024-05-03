@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CNG Calculator</title>
+    <link rel="stylesheet" href="./Assests/css/main.css" />
+  </head>
+  <body class="bg-gradient-to-b from-sblue via-slate-900 to-black h-[668px]">
+    <div
+      class="bg-Sred max-w-3xl mx-auto mt-10 p-[30px] rounded-lg shadow-black shadow-lg"
+    >
+      <!-- Title -->
+      <main>
+        <h1 class="text-white font-semibold flex justify-center">
+          CNG Calculator
+        </h1>
+        <p class="font-semibold flex justify-center">
+          Calculate Your Fuel Expense
+        </p>
+      </main>
+
+      <!-- Image -->
+      <div class="flex">
+        <img
+          class="w-1/2 rounded mt-5 shadow-md shadow-black"
+          src="./Fuel.jpg"
+          alt="Placeholder image"
+        />
+
+        <form class="pl-10 mt-10 space-y-9 justify-center">
+          <label for="tr" class="relative">
+            <input id="tr" text="number" class="form-input" required />
+
+            <span class="span-box">Trip Distance</span>
+          </label>
+
+          <div class="">
+            <label for="tr" class="relative">
+              <input id="tr" text="number" class="form-input" required />
+
+              <span class="span-box">Fuel Efficiency</span>
+            </label>
+          </div>
+
+          <div class="">
+            <label for="tr" class="relative">
+              <input id="tr" text="number" class="form-input" required />
+
+              <span class="span-box">Fuel Cost</span>
+            </label>
+          </div>
+
+          <div>
+            <button class="bg-sblue rounded p-2 ml-[100px] text-white">
+              Calculate
+            </button>
+          </div>
+
+          <div class="font-medium pl-12">
+            Have a safe journey
+            <span id="fullName" class="text-white"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./Assests/javascript/main.js"></script>
+  </body>
+</html>
