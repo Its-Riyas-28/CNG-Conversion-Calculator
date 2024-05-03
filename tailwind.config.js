@@ -2,8 +2,15 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  purge: {
+    enabled: process.env.NODE_ENV === "production", // Enable purging only in production
+    content: [
+      "./index.html",
+      "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+  },
   theme: {
     extend: {
       colors:{
@@ -14,4 +21,3 @@ export default {
   },
   plugins: [],
 }
-
